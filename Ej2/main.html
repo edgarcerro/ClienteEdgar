@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ejercicio 2</title>
+<meta charset="utf-8" />
+<meta name="description" content="Formulario - Ejercicio 2">
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+ 
+<body>
+    <header>
+        <h1>Mi Formulario</h1>
+     </header>
+
+    <nav>
+        <a href="./main.html">Formulario</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./info.html">Sobre nosotros</a>
+        <a href="./verForm.php">VerForm</a>
+    </nav>
+    <br>
+    <form action="verForm.php" method="POST">  
+        <label for="nombreApellidos">Nombre con apellidos:</label>
+        <input type="text" id="nombreApellidos" name="nombreApellidos"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="email">Fecha de nacimiento:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <p>Selecciona tu sexo:</p>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label><br>
+
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br>
+
+        <input type="radio" id="otro" name="sexo" value="otro">
+        <label for="otro">Otro</label><br><br>
+        
+        <label for="codigoPostal">Codigo postal:</label>
+        <input type="number" id="codigoPostal" name="codigoPostal"><br>
+
+        <p>Que estas estudiando:</p>
+        <input type="radio" id="daw" name="estudios" value="daw">
+        <label for="daw">DAW</label><br>
+
+        <input type="radio" id="dam" name="estudios" value="dam">
+        <label for="dam">DAM</label><br>
+
+        <input type="radio" id="asix" name="estudios" value="asix">
+        <label for="asix">ASIX</label><br><br>
+
+        <p>Selecciona los frameworks que conozcas:</p>
+        <input type="checkbox" id="framework1" name="framework1" value="angular">
+        <label for="framework1"> Angular</label><br>
+        <input type="checkbox" id="framework2" name="framework2" value="vue">
+        <label for="framework2"> Vue</label><br>
+        <input type="checkbox" id="framework3" name="framework3" value="symfony">
+        <label for="framework3"> Symfony</label><br>
+        <input type="checkbox" id="framework4" name="framework4" value="laravel">
+        <label for="framework4"> Laravel</label><br>
+
+        <br>
+        Aceptas las condiciones de servicio y nuestra política de privacidad
+        <label for="condiciones"></label>
+        <input type="checkbox" id="condiciones" name="condiciones" value="condiciones" required>
+        
+    <br><br>
+    <input type="submit" value="Enviar">
+    </form>
+<br>
+    <footer>
+        Formulario Edgar // 2ºDAW 
+    </footer>
+</body>
+</html>
